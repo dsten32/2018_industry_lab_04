@@ -30,7 +30,7 @@ public class Deodorant {
     // TODO Implement all methods below this line.
 
     public double getPrice() {
-        return 0;
+        return price;
     }
 
     public String getBrand() {
