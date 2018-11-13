@@ -4,7 +4,7 @@ public class MovieProgram {
     public void start() {
         
         // TODO Step 1. Modify this line to construct an array of 19 Movie objects, called "films".
-        Movie[] films = null;
+        Movie[] films = new Movie[19];
         
         fillMoviesArray(films);                
         printMoviesArray(films);        
