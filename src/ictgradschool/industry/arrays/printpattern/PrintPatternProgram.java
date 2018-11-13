@@ -1,5 +1,7 @@
 package ictgradschool.industry.arrays.printpattern;
 
+import ictgradschool.Pattern;
+
 public class PrintPatternProgram {
 
     public void start() {
@@ -12,7 +14,7 @@ public class PrintPatternProgram {
         System.out.println("First Pattern");
 
         // TODO Uncomment this code once you've created the Pattern class.
-        /*
+
         Pattern top = new Pattern(15, '*');
         
         Pattern sideOfFirstLine = new Pattern(7, '#');
@@ -25,7 +27,7 @@ public class PrintPatternProgram {
         for (int i = 0; i < 6; i++) {
             middle.setNumberOfCharacters(middle.getNumberOfCharacters() + 1);
             System.out.println(sideOfLine.toString() + middle.toString() + sideOfLine.toString());
-        }*/
+        }
         
         System.out.println();
     }

@@ -2,9 +2,9 @@ package ictgradschool;
 
 public class Pattern {
     private int numberOfCharacters;
-    private String character;
+    private char character;
 
-    public Pattern(int num, String character){
+    public Pattern(int num, char character){
         this.numberOfCharacters=num;
         this.character=character;
     }
@@ -20,7 +20,7 @@ public class Pattern {
     @Override
     public String toString() {
         String pattern="";
-        String[] charPattern=new String[numberOfCharacters];
+        char[] charPattern=new char[numberOfCharacters];
 
         for (int i = 0; i < charPattern.length; i++) {
             charPattern[i]=character;
