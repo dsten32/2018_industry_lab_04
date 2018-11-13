@@ -74,7 +74,11 @@ public class MovieProgram {
     
     private void printDirector(String movieName, Movie[] movies) {
         // TODO Step 5. Complete the printDirector() method
-               
+        for (int i = 0; i < movies.length; i++) {
+            if (movies[i].getName() == movieName){
+                System.out.println(movieName + " was directed by " + movies[i].getDirector());
+            }
+        }
     }
 
     public static void main(String[] args) {
