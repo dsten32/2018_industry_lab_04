@@ -12,7 +12,7 @@ public class MovieProgram {
         Movie mostRecentMovie = getMostRecentMovie(films);      
         Movie longestMovie = getLongestMovie(films);       
         
-        //printResults(mostRecentMovie, longestMovie);
+        printResults(mostRecentMovie, longestMovie);
         System.out.println();
         
         printDirector("Searching for Sugar Man", films);
@@ -74,16 +74,13 @@ public class MovieProgram {
     
     private void printDirector(String movieName, Movie[] movies) {
         // TODO Step 5. Complete the printDirector() method
-        String directedBy = "";
+        String directedBy=movieName + " is not in the collection.";
         for (int i = 0; i < movies.length; i++) {
             if (movies[i].getName() == movieName){
                 directedBy = movieName + " was directed by " + movies[i].getDirector();
             }
-            if (directedBy.length()==0){
-                directedBy=movieName + " is not in the collection.";
-            }
-            System.out.println(directedBy);
         }
+        System.out.println(directedBy);
     }
 
     public static void main(String[] args) {
