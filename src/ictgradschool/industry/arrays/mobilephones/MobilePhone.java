@@ -14,13 +14,13 @@ public class MobilePhone {
     }
 
     // TODO Uncomment these methods once the corresponding instance variable has been declared.
-    /*public String getBrand() {
+    public String getBrand() {
         return brand;
     }
 
     public void setBrand(String brand) {
         this.brand = brand;
-    }*/
+    }
     
     // TODO Insert getModel() method here
 
