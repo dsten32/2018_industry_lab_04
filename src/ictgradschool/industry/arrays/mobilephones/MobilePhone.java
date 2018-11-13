@@ -54,8 +54,20 @@ public class MobilePhone {
     }
 
     // TODO Insert isCheaperThan() method here
+    public boolean isCheaperThan(MobilePhone other){
+        return other.price>this.price;
+    }
     
     // TODO Insert equals() method here
+    public boolean equals(Object other){
+        if (other instanceof MobilePhone){
+            MobilePhone otherM = (MobilePhone) other;
+            return this.price==otherM.price
+                    && this.model==otherM.model
+                    && this.brand==otherM.brand;
+        }
+        return false;
+    }
 
 
 }

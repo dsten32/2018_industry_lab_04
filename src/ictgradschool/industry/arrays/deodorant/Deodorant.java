@@ -61,8 +61,6 @@ public class Deodorant {
 
         boolean b = other.getPrice() < this.price;
         return b;
-        
 
-        //return false;
     }
 }
