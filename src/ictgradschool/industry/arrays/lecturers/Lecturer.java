@@ -68,6 +68,10 @@ public class Lecturer {
     }
 
     // TODO Insert toString() method here
+    public String toString(){
+
+        return this.name;
+    }
     
     // TODO Insert teachesMorePapersThan() method here
     public boolean teachesMorePapersThan(Lecturer other){
