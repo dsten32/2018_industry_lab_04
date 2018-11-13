@@ -48,6 +48,9 @@ public class MovieProgram {
         System.out.println("Movie Collection");
         System.out.println("================");
         // TODO Step 2.  Complete the printMoviesArray() method
+        for (int i = 0; i < films.length; i++) {
+            System.out.print(films[i]);
+        }
 
     }
     
