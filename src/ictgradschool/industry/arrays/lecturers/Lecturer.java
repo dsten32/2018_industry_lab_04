@@ -70,7 +70,7 @@ public class Lecturer {
     // TODO Insert toString() method here
     public String toString(){
 
-        return this.name;
+        return "id:"+staffId + " " + name + " is teaching " + papers.length + " papers.";
     }
     
     // TODO Insert teachesMorePapersThan() method here
