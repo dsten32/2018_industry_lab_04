@@ -34,30 +34,35 @@ public class Deodorant {
     }
 
     public String getBrand() {
-        return null;
+        return brand;
     }
 
     public boolean isRollOn() {
-        return false;
+        return rollOn;
     }
 
     public String getFragrance() {
-        return null;
+        return fragrance;
     }
 
     public void setPrice(double price) {
-
+        this.price=price;
     }
 
     public void setBrand(String brand) {
-
+        this.brand=brand;
     }
 
     public void setFragrance(String fragrance) {
-
+        this.fragrance=fragrance;
     }
 
     public boolean isMoreExpensiveThan(Deodorant other) {
-        return false;
+
+        boolean b = other.getPrice() < this.price;
+        return b;
+        
+
+        //return false;
     }
 }
