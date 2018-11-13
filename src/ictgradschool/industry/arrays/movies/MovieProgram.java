@@ -57,8 +57,12 @@ public class MovieProgram {
     
     private Movie getMostRecentMovie(Movie[] films) {
         // TODO Step 3.  Complete the getMostRecentMovie() method.
-
-        return null;
+        Movie mostRecent = films[0];
+        for (int i = 0; i < films.length; i++) {
+            if (films[i].isMoreRecentThan(films[i+1]));
+            mostRecent=films[i];
+        }
+        return mostRecent;
     }
     
     private Movie getLongestMovie(Movie[] movies) {
