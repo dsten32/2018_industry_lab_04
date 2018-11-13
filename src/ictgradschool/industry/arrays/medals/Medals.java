@@ -52,15 +52,15 @@ public class Medals {
     public boolean hasMoreGoldMedalsThan(Medals other) {
         // TODO Method that returns true if this country has more gold medals than the other.
         // Otherwise it returns false.
+        boolean moreGolds = other.golds<this.golds;
 
-        return false;
+        return moreGolds;
     }
     
     
     public String toString() {
         // TODO return a String representing the instance variables formatted as per the hand-out.
         String output = countryName + " has " + golds + " gold medals, " + silvers + " silver medals, " + bronzes + " 13 bronze medals";
-
         return output;
     }
 
