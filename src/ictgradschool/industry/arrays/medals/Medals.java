@@ -60,7 +60,7 @@ public class Medals {
     
     public String toString() {
         // TODO return a String representing the instance variables formatted as per the hand-out.
-        String output = countryName + " has " + golds + " gold medals, " + silvers + " silver medals, " + bronzes + " 13 bronze medals";
+        String output = countryName + " has " + golds + " gold medals, " + silvers + " silver medals, " + bronzes + " bronze medals";
         return output;
     }
 
