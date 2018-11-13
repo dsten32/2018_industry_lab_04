@@ -50,7 +50,7 @@ public class MobilePhone {
 
     @Override
     public String toString() {
-        return brand + " " + model + " " + " which cost $" + price;
+        return brand + " " + model + " which cost $" + price;
     }
 
     // TODO Insert isCheaperThan() method here
@@ -62,9 +62,9 @@ public class MobilePhone {
     public boolean equals(Object other){
         if (other instanceof MobilePhone){
             MobilePhone otherM = (MobilePhone) other;
-            return this.price==otherM.price
+            return this.brand==otherM.brand
                     && this.model==otherM.model
-                    && this.brand==otherM.brand;
+                    && this.price==otherM.price;
         }
         return false;
     }
