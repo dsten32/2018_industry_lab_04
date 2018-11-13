@@ -62,9 +62,9 @@ public class MobilePhone {
     public boolean equals(Object other){
         if (other instanceof MobilePhone){
             MobilePhone otherM = (MobilePhone) other;
-            return this.brand==otherM.brand
-                    && this.model==otherM.model
-                    && this.price==otherM.price;
+            return this.brand==otherM.getBrand()
+                    && this.model==otherM.getModel()
+                    && this.price==otherM.getPrice();
         }
         return false;
     }
