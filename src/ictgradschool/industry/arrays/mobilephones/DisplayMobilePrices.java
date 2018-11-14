@@ -10,7 +10,7 @@ public class DisplayMobilePrices {
         
         printDescriptions(jonathansPhone, annsPhone, adrianasPhone, alastairsPhone);
 
-        // TODO Uncomment these lines once you've implemented the corresponding MobilePhone methods.
+        //  Uncomment these lines once you've implemented the corresponding MobilePhone methods.
         alastairsPhone.setBrand(new String ("Apple"));
          alastairsPhone.setModel(new String ("iPhone 4"));
          alastairsPhone.setPrice(899.95);
@@ -29,7 +29,7 @@ public class DisplayMobilePrices {
     }
     
     private void printNewPurchase(String name, MobilePhone phone) {
-        // TODO Uncomment this line once you've implemented the corresponding MobilePhone methods.
+        //  Uncomment this line once you've implemented the corresponding MobilePhone methods.
          System.out.println(name + " has now purchased a new " + phone.getBrand() + " " + phone.getModel() + " for $" + phone.getPrice());
     }
     
@@ -46,7 +46,7 @@ public class DisplayMobilePrices {
             System.out.println("Alastair has the same type as Jonathan");
         }
 
-        // TODO Uncomment these lines once you've implemented the corresponding MobilePhone methods.
+        //  Uncomment these lines once you've implemented the corresponding MobilePhone methods.
         if (annsPhone.isCheaperThan(adrianasPhone)) {
             System.out.println("Ann wants a new phone");
         } else {

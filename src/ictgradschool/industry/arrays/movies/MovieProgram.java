@@ -3,7 +3,7 @@ package ictgradschool.industry.arrays.movies;
 public class MovieProgram {
     public void start() {
         
-        // TODO Step 1. Modify this line to construct an array of 19 Movie objects, called "films".
+        //  Step 1. Modify this line to construct an array of 19 Movie objects, called "films".
         Movie[] films = new Movie[19];
         
         fillMoviesArray(films);                
@@ -47,7 +47,7 @@ public class MovieProgram {
     private void printMoviesArray(Movie[] films) {
         System.out.println("Movie Collection");
         System.out.println("================");
-        // TODO Step 2.  Complete the printMoviesArray() method
+        //  Step 2.  Complete the printMoviesArray() method
         for (int i = 0; i < films.length; i++) {
             System.out.println(films[i]);
         }
@@ -56,7 +56,7 @@ public class MovieProgram {
     
     
     private Movie getMostRecentMovie(Movie[] films) {
-        // TODO Step 3.  Complete the getMostRecentMovie() method.
+        // Step 3.  Complete the getMostRecentMovie() method.
         Movie mostRecent = films[0];
 
 //        for (int i = 0; i < films.length; i++) {
@@ -72,8 +72,14 @@ public class MovieProgram {
     }
     
     private Movie getLongestMovie(Movie[] movies) {
-        // TODO Step 4.  Complete the getLongest() method.
-        return null;
+        //  Step 4.  Complete the getLongest() method.
+        Movie longest = movies[0];
+        for (int j=1;j<movies.length;j++){
+            if (!longest.isLongerThan(movies[j])) {
+                longest = movies[j];
+            }
+        }
+        return longest;
     }
     
     private void printResults(Movie mostRecent, Movie longest) {
@@ -83,7 +89,7 @@ public class MovieProgram {
     }
     
     private void printDirector(String movieName, Movie[] movies) {
-        // TODO Step 5. Complete the printDirector() method
+        //  Step 5. Complete the printDirector() method
         String directedBy=movieName + " is not in the collection.";
         for (int i = 0; i < movies.length; i++) {
             if (movies[i].getName() == movieName){

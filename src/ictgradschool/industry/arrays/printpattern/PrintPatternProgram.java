@@ -13,7 +13,7 @@ public class PrintPatternProgram {
     private void printPatternOne() {
         System.out.println("First Pattern");
 
-        // TODO Uncomment this code once you've created the Pattern class.
+        //  Uncomment this code once you've created the Pattern class.
 
         Pattern top = new Pattern(15, '*');
         

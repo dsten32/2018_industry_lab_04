@@ -27,7 +27,7 @@ public class Deodorant {
         return info;
     }
 
-    // TODO Implement all methods below this line.
+    //  Implement all methods below this line.
 
     public double getPrice() {
         return price;

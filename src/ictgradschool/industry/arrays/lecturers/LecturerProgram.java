@@ -43,7 +43,7 @@ public class LecturerProgram {
         System.out.println("Lecturers Currently on Leave");
         System.out.println("----------------------------");
         for (int i = 0; i < lecturers.length; i++) {
-            // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
+            //  Uncomment these lines once you've implemented the corresponding Lecturer methods.
             if (lecturers[i].isOnLeave() == true) {
                 System.out.println(lecturers[i].getName());
             }
@@ -52,7 +52,7 @@ public class LecturerProgram {
     
 
     private void updateLecturerDetails(Lecturer lecturer) {
-        // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
+        //  Uncomment these lines once you've implemented the corresponding Lecturer methods.
         lecturer.setName("Crystal Ball");
         lecturer.setStaffId(23456);
         String[] coreStage1Papers = {"CompSci101", "CompSci105"};
@@ -64,7 +64,7 @@ public class LecturerProgram {
         System.out.println();
         System.out.println("Updated details for changed lecturer number " + (number + 1));
         System.out.println("---------------------------------------------");
-        // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
+        //  Uncomment these lines once you've implemented the corresponding Lecturer methods.
         System.out.println("Name: " + lecturer.getName());
         System.out.println("Id: " + lecturer.getStaffId());
         String[] papers = lecturer.getPapers();
@@ -85,7 +85,7 @@ public class LecturerProgram {
     private Lecturer getLecturerWithMostPapers(Lecturer[] lecturers) {
         Lecturer lecturerWithMostPapersSoFar = lecturers[0];
         for (int i = 0; i < lecturers.length; i++) {
-            // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
+            //  Uncomment these lines once you've implemented the corresponding Lecturer methods.
             if (lecturers[i].teachesMorePapersThan(lecturerWithMostPapersSoFar)) {
                 lecturerWithMostPapersSoFar = lecturers[i];
             }
@@ -97,7 +97,7 @@ public class LecturerProgram {
         System.out.println();
         System.out.println("Most papers");
         System.out.println("-----------");
-        // TODO Uncomment these lines once you've implemented the corresponding Lecturer methods.
+        //  Uncomment these lines once you've implemented the corresponding Lecturer methods.
         System.out.println(lecturerWithMostPapers.getName() + " teaches more papers than any other lecturer.");
     }
 

@@ -9,7 +9,7 @@ public class Lecturer {
     private boolean onLeave;
     
     public Lecturer(String name, int staffId, String[] papers, boolean onLeave) {
-        // TODO Complete this constructor method
+        //  Complete this constructor method
         this.name=name;
         this.staffId=staffId;
         this.onLeave=onLeave;
@@ -19,61 +19,61 @@ public class Lecturer {
         }
     }
     
-    // TODO Insert getName() method here
+    //  Insert getName() method here
 
     public String getName() {
         return name;
     }
 
-    // TODO Insert setName() method here
+    //  Insert setName() method here
 
     public void setName(String name) {
         this.name = name;
     }
 
-    // TODO Insert getStaffId() method here
+    //  Insert getStaffId() method here
 
     public int getStaffId() {
         return staffId;
     }
 
-    // TODO Insert setStaffId() method here
+    //  Insert setStaffId() method here
 
     public void setStaffId(int staffId) {
         this.staffId = staffId;
     }
 
-    // TODO Insert getPapers() method here
+    //  Insert getPapers() method here
 
     public String[] getPapers() {
         return papers;
     }
 
-    // TODO Insert setPapers() method here
+    //  Insert setPapers() method here
 
     public void setPapers(String[] papers) {
         this.papers = papers;
     }
 
-    // TODO Insert isOnLeave() method here
+    //  Insert isOnLeave() method here
 
     public boolean isOnLeave() {
         return onLeave;
     }
 
-    // TODO Insert setOnLeave() method here
+    //  Insert setOnLeave() method here
 
     public void setOnLeave(boolean onLeave) {
         this.onLeave = onLeave;
     }
 
-    // TODO Insert toString() method here
+    //  Insert toString() method here
     public String toString(){
 
         return "id:"+staffId + " " + name + " is teaching " + papers.length + " papers.";
     }
     
-    // TODO Insert teachesMorePapersThan() method here
+    //  Insert teachesMorePapersThan() method here
     public boolean teachesMorePapersThan(Lecturer other){
         return other.papers.length < this.papers.length;
     }
