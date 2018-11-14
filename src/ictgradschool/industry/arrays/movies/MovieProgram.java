@@ -9,10 +9,10 @@ public class MovieProgram {
         fillMoviesArray(films);                
         printMoviesArray(films);        
         
-        Movie mostRecentMovie = getMostRecentMovie(films);      
-        Movie longestMovie = getLongestMovie(films);       
-        
-        printResults(mostRecentMovie, longestMovie);
+        Movie mostRecentMovie = getMostRecentMovie(films);
+        Movie longestMovie = getLongestMovie(films);
+//
+        printResults(mostRecentMovie, longestMovie);//
         System.out.println();
         
         printDirector("Searching for Sugar Man", films);
@@ -58,10 +58,16 @@ public class MovieProgram {
     private Movie getMostRecentMovie(Movie[] films) {
         // TODO Step 3.  Complete the getMostRecentMovie() method.
         Movie mostRecent = films[0];
-        for (int i = 0; i < films.length; i++) {
-            if (films[i].isMoreRecentThan(films[i+1]));
-            mostRecent=films[i];
-        }
+
+//        for (int i = 0; i < films.length; i++) {
+//            mostRecent=films[i];
+                for (int j=1;j<films.length;j++){
+                    if (!mostRecent.isMoreRecentThan(films[j])) {
+                        mostRecent = films[j];
+                    }
+                }
+//
+//        }
         return mostRecent;
     }
     
